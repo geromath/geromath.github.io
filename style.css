@@ -27,7 +27,7 @@ main {
 }
 
 .main__header {
-  height: 30vh;
+  min-height: 30vh;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -35,26 +35,27 @@ main {
 
 .main__title {
   font-size: 4rem;
-  padding: 2em 0 0 0;
+  padding: 2rem 0 0 0;
 }
 
 .main__title--small {
   font-size: .7rem;
 }
 
-.main__desc {
-  padding: 0 0 8rem 0;
+.main__list {
+  padding: 2rem 0;
 }
 
 .container {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem 4rem;
 }
 
 .card {
-  width: 30vw;
+  width: 100%;
   height: 30vh;
   display: grid;
   place-content: center;
