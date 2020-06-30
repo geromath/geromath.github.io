@@ -4,12 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geromath</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav><a href="/twigstick">Projects</a></nav>
     <main>
-      <h1>GEROMATH</h1>
+      <header class="main__header">
+        <h1 class="main__title">Mathias Maagerø Svendsen <span class="main__title--small">(Geromath)</span></h1>
+        <ul class="main__list">
+          <li class="main__list__item">Web developer</li>
+          <li class="main__list__item">Father</li>
+        </ul>
+      </header>
+      
+      <h1> Currently working on: </h1>
+
+      <div class="container">
+        <section class="card neo">
+          <header class="card__header">
+            <h2>Skipark</h2>
+            <div class="tech">
+              <div class="tech__img-wrapper">
+                <img src="img/django-logo.png" class="tech__img" alt="Django Logo">
+              </div>
+            </div>
+          </header>
+          <p>An application for cross country skiers to categorize their skis and help with selection on race day. This is made with Django. </p>
+        </section>
+  
+        <section class="card neo">
+          <header class="card__header">
+            <h2>Twigstick</h2>
+            <div class="tech">
+              <div class="tech__img-wrapper">
+                <img src="img/react-logo.png" class="tech__img" alt="React Logo">
+              </div>
+            </div>
+          </header>
+          <p>A simple web application made with React. The web page is for a personal brand. </p>
+        </section>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <p> Made with 🐱‍👤-powers by <a href="www.github.com/geromath"> Mathias Maageø Svendsen </a> </p>
+    </footer>
   </body>
 </html>
